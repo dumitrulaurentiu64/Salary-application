@@ -1,0 +1,126 @@
+create table employees (
+	Id int Primary Key identity(1,1),
+	Lastname varchar(50),
+	Surname varchar(50),
+	Position varchar(50),
+	Base_Salary int,
+	Increase int default 0,
+	Gross_Prizes int,
+	Gross_Total int,
+	Taxable_Gross int,
+	CAS int,
+	CASS int,
+	Tax int,
+	Deductions int default 0,
+	Net_Salary int
+)
+
+insert into employees values 
+('Dumitru', 'Laurentiu', 'Programator', 4000, 10, 0, 4400, 2860, 286, 880, 660, 0, 2574);
+
+
+insert into employees values 
+('Cati', 'Alexandru', 'Mecanic', 4000, 10, 0, 4400, 2860, 286, 880, 660, 0, 2574);
+
+
+insert into employees values 
+('Onet', 'Flaviu', 'Instalator', 4000, 10, 0, 4400, 2860, 286, 880, 660, 0, 2574);
+
+insert into employees values 
+('Sida', 'Mirel', 'Camionagiu', 4000, 10, 0, 4400, 2860, 286, 880, 660, 0, 2574);
+
+insert into employees values 
+('Rauca', 'David', 'Antreprenor', 4000, 10, 0, 4400, 2860, 286, 880, 660, 0, 2574);
+
+// HERE
+
+insert into employees(Lastname, Surname, Position, Base_Salary, Increase, Gross_Prizes, Deductions) values 
+('Sustac', 'George', 'Inginer', 4000, 10, 0, 0);
+
+CREATE TRIGGER calculateSalary ON employees
+	FOR INSERT, UPDATE
+AS
+
+	declare @GrossTotalVar integer;
+	declare @TaxableGrossVar integer;
+	declare @TaxVar integer;
+	declare @CasVar integer;
+	declare @CassVar integer;
+	declare @NetSalaryVar integer;
+
+	declare @TaxPercentage integer;
+	declare @CasPercentage integer;
+	declare @CassPercentage integer;
+ 
+BEGIN
+
+	select Tax, CAS, CASS into TaxPercentage, CasPercentage, CassPercentage from Taxes;
+
+	GrossTotalVar := :new.base_salary*(1 + :new.Increase/100) + :new.gross_prizes;
+	CasVar := GrossTotalVar * (CasPercentage/100);
+	CassVar := GrossTotalVar * (CasPercentage/100);
+	TaxableGrossVar := GrossTotalVar - CasVar - CassVar;
+	TaxVar := TaxableGrossVar * ( TaxPercentage/100);
+	NetSalaryVar := GrossTotalVar - TaxVar - CasVar - CassVar - :new.deductions;
+
+	:new.Gross_Total := GrossTotalVar;
+	:new.Taxable_Gross := TaxableGrossVar;
+	:new.Tax  := TaxVar;
+	:new.Cas  := CasVar;
+	:new.Cass  := CassVar;
+	:new.Net_Salary  := NetSalaryVar;
+
+END
+
+
+CREATE TRIGGER calculateSalary1 ON employees
+	FOR INSERT, UPDATE
+AS
+	declare @GrossTotalVar integer;
+	declare @TaxableGrossVar integer;
+	declare @TaxVar integer;
+	declare @CasVar integer;
+	declare @CassVar integer;
+	declare @NetSalaryVar integer;
+
+	declare @TaxPercentage integer;
+	declare @CasPercentage integer;
+	declare @CassPercentage integer;
+ 
+BEGIN
+	SET @TaxPercentage = (select tax from dbo.Taxes) 
+	SET @CasPercentage = (select cas from dbo.Taxes)
+	SET @CassPercentage = (select cass from dbo.Taxes) 
+
+	SET @GrossTotalVar = (select i.Base_Salary from inserted i)*(1 + (select i.Increase from inserted i)/100) + (select i.Gross_Prizes from inserted i);
+	SET @CasVar = @GrossTotalVar * (@CasPercentage/100);
+	SET @CassVar = @GrossTotalVar * (@CassPercentage/100);
+	SET @TaxableGrossVar = @GrossTotalVar - @CasVar - @CassVar;
+	SET @TaxVar = @TaxableGrossVar * ( @TaxPercentage/100);
+	SET @NetSalaryVar = @GrossTotalVar - @TaxVar - @CasVar - @CassVar - ( select i.deductions from inserted i )
+
+	update employees
+	set Tax=@TaxPercentageVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Cas=@CasVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Cass=@CassVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Gross_Total=@GrossTotalVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Taxable_Gross=@TaxableGrossVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Net_Salary=@NetSalaryVar
+	where id=(select i.id from inserted i);
+
+END

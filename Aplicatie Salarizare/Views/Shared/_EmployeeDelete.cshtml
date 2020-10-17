@@ -1,0 +1,43 @@
+﻿@model Aplicatie_Salarizare.Models.Employee
+
+
+<tr class="table-row">
+    <th>@Model.Surname </th>
+    <th>@Model.Lastname</th>
+    <th>@Model.Position</th>
+    <th>@Model.Base_Salary</th>
+    <th>@Model.Increase</th>
+    <th>@Model.Gross_Prizes</th>
+    <th>@Model.Gross_Total</th>
+    <th>@Model.Taxable_Gross</th>
+    <th>@Model.Deductions</th>
+    <th>@Model.Net_Salary</th>
+    <th>
+        <form action="home/remove" method="POST">
+            <input type="hidden" name="id" value="@Model.Id"/>
+            <button type="submit" class="btn btn-danger btn-sm ml-2 mr-2">
+                Sterge Angajat
+            </button>
+        </form>
+    </th>
+</tr>
+
+<style>
+    .btn {
+        margin: 5px 0 5px 0;
+    }
+</style>
+
+<!--
+<article class="employee">
+    <h3>
+        Model.Lastname Model.Surname Model.Net_Salary
+    </h3>
+    <div class="details">
+       Model.Position Model.Tax
+    </div>
+    <div class="content">
+        Model.ToString()
+    </div>
+</article>
+    -->

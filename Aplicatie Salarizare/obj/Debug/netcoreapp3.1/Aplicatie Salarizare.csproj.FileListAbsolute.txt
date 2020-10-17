@@ -85,12 +85,7 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\M
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Abstractions.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Memory.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Abstractions.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Binder.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
@@ -98,8 +93,6 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\M
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -114,19 +107,15 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\M
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Abstractions.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Primitives.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
@@ -140,7 +129,6 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\S
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Collections.Immutable.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
@@ -157,7 +145,6 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\S
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Data.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
@@ -324,12 +311,8 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\ru\Mic
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.csprojAssemblyReference.cache
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.AssemblyInfoInputs.cache
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.AssemblyInfo.cs
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.csproj.CoreCompileInputs.cache
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cs
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cache
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.RazorAssemblyInfo.cache
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.RazorAssemblyInfo.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.TagHelpers.input.cache
@@ -351,9 +334,53 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\static
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.dll
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.pdb
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.genruntimeconfig.cache
-S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Insert.cshtml.g.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Percentages.cshtml.g.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Reports.cshtml.g.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Calculate.cshtml.g.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Update.cshtml.g.cs
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Home\Insert.cshtml.g.cs
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.csprojAssemblyReference.cache
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.csproj.CoreCompileInputs.cache
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cs
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cache
+S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EmployeeDelete.cshtml.g.cs
