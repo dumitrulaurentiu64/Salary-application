@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b8JkQo89XSxUUoShWcwWKkncHgb8EVij6csR2H8KtJgLXCy6RJdiD9s54mXiX9sFp0Z3KOO9CPt4YQVPRrozRg==",
+  "dgSpecHash": "HMnCsAiMhfali8BwUHjCX4zxrvcPcGpC4eElt6VjD6gCfG9h8b0OzdGYsHs4qoJE5l6A/qsZxzsw2cnel6ludw==",
   "success": true,
-  "projectFilePath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
+  "projectFilePath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LaurentiuDumitru\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\LaurentiuDumitru\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",

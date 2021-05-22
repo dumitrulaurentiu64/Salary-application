@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {}
+    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {}
   },
   "projects": {
-    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {
+    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
         "projectName": "Aplicatie Salarizare",
-        "projectPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
         "packagesPath": "C:\\Users\\LaurentiuDumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\Not work related\\PMS\\Aplicatie Salarizare\\Aplicatie Salarizare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
