@@ -1,8 +1,74 @@
-﻿@{
+﻿@model IEnumerable<Aplicatie_Salarizare.Models.Employee>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2 class="display-4">Lista Angajati</h2>
 </div>
+
+<table id="content-table">
+    <thead>
+        <tr>
+            <th>Prenume</th>
+            <th>Nume</th>
+            <th>Functie</th>
+            <th>Salariu de baza</th>
+            <th>Spor</th>
+            <th>Premii brute</th>
+            <th>Brut total</th>
+            <th>Brut Impozitabil</th>
+            <th>CAS</th>
+            <th>CASS</th>
+            <th>Impozit</th>
+            <th>Retineri</th>
+            <th>Salariu Net</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+         {
+        <tr class="table-row">
+            <th>@emp.Surname </th>
+            <th>@emp.Lastname</th>
+            <th>@emp.Position</th>
+            <th>@emp.Base_Salary</th>
+            <th>@emp.Increase</th>
+            <th>@emp.Gross_Prizes</th>
+            <th>@emp.Gross_Total</th>
+            <th>@emp.Taxable_Gross</th>
+            <th>@emp.CAS</th>
+            <th>@emp.CASS</th>
+            <th>@emp.Tax</th>
+            <th>@emp.Deductions</th>
+            <th>@emp.Net_Salary</th>
+        </tr>
+         }
+    </tbody>
+
+</table>
+
+<style>
+
+    .text-center{
+        padding-bottom: 50px;
+        margin-right: 100px;
+    }
+
+    #content-table {
+        border: 1px solid;
+    }
+
+        #content-table th {
+            min-width: 100px;
+            text-align: center;
+        }
+
+        #content-table thead {
+            border-bottom: 1px solid;
+        }
+
+    .table-row {
+        padding-top: 25px;
+    }
+</style>

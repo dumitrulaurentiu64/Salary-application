@@ -1,8 +1,81 @@
-﻿@{
+﻿@model Aplicatie_Salarizare.Models.Taxes
+@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Percentages</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="main-cntn">
+    <div class="text-center">
+        <h2 class="display-4">Taxe</h2>
+    </div>
+    <div>
+        <div class="row" style="margin-left: 50px;">
+            <div class="col-md-3">
+                <p>
+                    <label name="password">Password</label>
+                    <input id="password" name="password" type="text" value="" class="form-control" placeholder="Introdu parola..." />
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div class="add-btn">
+                    <a class="button-search" href="@Url.Action("Percentages", "Home")">Afisare taxe</a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            @if (Model != null)
+            {
+                @await Html.PartialAsync("_UpdateTaxes", Model)
+            }
+        </div>
+    </div>
 </div>
+    <script>
+        $('#main-cntn').on('click', '.add-btn a', function () {
+            var password = $("#password").val();
+            var url = $(this).attr('href');
+            $('#main-cntn').load(url, { password: password });
+
+            return false;
+        })
+    </script>
+
+    <style>
+        .button-search {
+            display: block;
+            width: 200px;
+            height: 38px;
+            background: #4E9CAF;
+            padding-top: 5px;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+        }
+
+        .text-center {
+            margin-bottom: 50px;
+            margin-right: 130px;
+        }
+
+        .col-md-3 {
+            align-self: center;
+        }
+
+        #content-table {
+            border: 1px solid;
+        }
+
+            #content-table th {
+                min-width: 100px;
+                text-align: center;
+            }
+
+            #content-table thead {
+                border-bottom: 1px solid;
+            }
+
+        .table-row {
+            padding-top: 25px;
+        }
+    </style>

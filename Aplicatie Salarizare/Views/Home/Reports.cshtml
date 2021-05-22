@@ -1,8 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div id="main-cntn">
+    <div class="text-center">
+        <h2 class="display-4">Reports</h2>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Reports</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row" style="margin-left: 75px;">
+        <div class="col-md-2">
+            <a id="btnPrint" class="btn btn-success" href="../Home/EmployeesReport" target="_blank">STAT DE PLATA</a>
+        </div>
+        <div class="col-md-2">
+            <a style="margin-left: 16px;" id="btnPrint" class="btn btn-success" href="../Home/AllFlyers" target="_blank">FLUTURASI</a>
+        </div>
+    </div>
+
+    <form method="post" action="@Url.Action("Flyer", "Home")" target="_blank">
+
+        <table style="margin-left: 75px; margin-top: 40px;">
+            <tr>
+                <td><input id="surname" name="surname" type="text" value="" class="form-control" style="margin-left: 13px;" placeholder="Introdu numele..." /></td>
+                <td><button type="submit" value="Submit" class="btn btn-success" style="margin-left: 50px;">FLUTURAS</button></td>
+            </tr>
+        </table>
+    </form>
 </div>
+

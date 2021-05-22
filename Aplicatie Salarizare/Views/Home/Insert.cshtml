@@ -1,8 +1,113 @@
-﻿@{
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model Aplicatie_Salarizare.Models.Employee
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Insert</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2 class="display-4">Adaugare angajat</h2>
 </div>
+
+<form asp-action="Insert" asp-controller="Home">
+    <div class="row">
+        <div asp-validaion-summary="ModelOnly" class="input-validation-error"></div>
+        <div class="col-md-3">
+            <p>
+                <label for="Lastname">Nume</label>
+                <input asp-for="Lastname" class="form-control" placeholder="Introdu numele..." />
+                <span asp-validation-for="Lastname"></span>
+            </p>
+        </div>
+
+        <div class="col-md-3">
+            <p>
+                <label for="Surname">Prenume</label>
+                <input asp-for="Surname" class="form-control" placeholder="Introdu prenumele...">
+                <span asp-validation-for="Surname"></span>
+            </p>
+        </div>
+
+
+        <div class="col-md-3 ">
+            <p>
+                <label for="Position">Functie</label>
+                <input asp-for="Position" class="form-control" placeholder="Functia avuta...">
+                <span asp-validation-for="Position"></span>
+            </p>
+        </div>
+
+        <div class="col-md-3 ">
+            <p>
+                <label for="Photo">Fotografie</label>
+                <input class="form-control" placeholder="Functia avuta...">
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 ">
+            <p>
+                <label for="Base_Salary">Salariul de baza</label>
+                <input asp-for="Base_Salary" value="0" class="form-control" placeholder="Salariul de baza...">
+                <span asp-validation-for="Base_Salary"></span>
+            </p>
+        </div>
+
+        <div class="col-md-3 ">
+            <p>
+                <label for="Increase">Spor</label>
+                <input asp-for="Increase" value="0" class="form-control" placeholder="Spor...">
+                <span asp-validation-for="Increase"></span>
+            </p>
+        </div>
+
+        <div class="col-md-3 ">
+            <p>
+                <label for="Gross_Prizes">Premii Brute</label>
+                <input asp-for="Gross_Prizes" value="0" class="form-control" placeholder="Premii brute...">
+                <span asp-validation-for="Gross_Total"></span>
+            </p>
+        </div>
+
+        <div class="col-md-3">
+            <p>
+                <label for="Deductions">Retineri</label>
+                <input asp-for="Deductions" value="0" class="form-control" placeholder="Retineri...">
+                <span asp-validation-for="Deductions"></span>
+            </p>
+        </div>
+    </div>
+
+    <div class="add-btn">
+        <button type="submit">Adauga angajat</button>
+    </div>
+
+</form>
+
+<style>
+    .row{
+        margin: 0 100px 0 50px;
+
+    }
+
+    .text-center {
+        margin-right: 130px;
+    }
+    .add-btn {
+        text-align: center;
+        margin-top: 25px;
+        margin-right: 100px;
+    }
+
+    form p {
+        max-width: 250px;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+
+</style>

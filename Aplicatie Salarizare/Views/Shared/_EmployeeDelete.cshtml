@@ -1,0 +1,59 @@
+﻿@model Aplicatie_Salarizare.Models.Employee
+
+
+<tr class="table-row">
+    <th>@Model.Surname </th>
+    <th>@Model.Lastname</th>
+    <th>@Model.Position</th>
+    <th>@Model.Base_Salary</th>
+    <th>@Model.Increase</th>
+    <th>@Model.Gross_Prizes</th>
+    <th>@Model.Gross_Total</th>
+    <th>@Model.Taxable_Gross</th>
+    <th>@Model.Deductions</th>
+    <th>@Model.Net_Salary</th>
+    <th>
+        <button id="empId" value="@Model.Id" onclick="removeEmp()" class="btn btn-danger btn-sm ml-2 mr-2">
+            Sterge Angajat
+        </button>
+    </th>
+</tr>
+
+<script>
+    function removeEmp() {
+        var response = confirm("Are you sure?");
+        if (response == true) {
+            var deleteId = $("#empId").val();
+            $.ajax({
+                type: "POST",
+                url: "home/remove",
+                data: { id: deleteId },
+                success: function (content) {
+                    $('#main-cntn').html(content);  // replace
+                }
+            });
+        } else {
+            txt = "No record was deleted!";
+        }  
+    }
+</script>
+
+<style>
+    .btn {
+        margin: 5px 0 5px 0;
+    }
+</style>
+
+<!--
+<article class="employee">
+    <h3>
+        Model.Lastname Model.Surname Model.Net_Salary
+    </h3>
+    <div class="details">
+       Model.Position Model.Tax
+    </div>
+    <div class="content">
+        Model.ToString()
+    </div>
+</article>
+    -->

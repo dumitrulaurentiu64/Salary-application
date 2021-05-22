@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Work\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {}
+    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {}
   },
   "projects": {
-    "S:\\Work\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {
+    "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Work\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
         "projectName": "Aplicatie Salarizare",
-        "projectPath": "S:\\Work\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
-        "packagesPath": "C:\\Users\\Laurentiu\\.nuget\\packages\\",
-        "outputPath": "S:\\Work\\Aplicatie Salarizare\\Aplicatie Salarizare\\obj\\",
+        "projectPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\Aplicatie Salarizare.csproj",
+        "packagesPath": "C:\\Users\\LaurentiuDumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Arggo\\Desktop\\SA\\Aplicatie Salarizare\\Aplicatie Salarizare\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Laurentiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LaurentiuDumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,10 +42,35 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AspNetCore.ReportViewer": {
+              "target": "Package",
+              "version": "[3.0.0.200103, )"
+            },
+            "AspNetCore.Reporting": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "System.CodeDom": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -61,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

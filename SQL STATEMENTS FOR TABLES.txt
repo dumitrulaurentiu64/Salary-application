@@ -1,0 +1,117 @@
+create table employees (
+	Id int Primary Key identity(1,1),
+	Lastname varchar(50),
+	Surname varchar(50),
+	Position varchar(50),
+	Base_Salary int,
+	Increase int default 0,
+	Gross_Prizes int,
+	Gross_Total int,
+	Taxable_Gross int,
+	CAS int,
+	CASS int,
+	Tax int,
+	Deductions int default 0,
+	Net_Salary int
+)
+
+CREATE TRIGGER calculateSalary ON employees
+	FOR INSERT, UPDATE
+AS
+	declare @GrossTotalVar integer;
+	declare @TaxableGrossVar integer;
+	declare @TaxVar integer;
+	declare @CasVar integer;
+	declare @CassVar integer;
+	declare @NetSalaryVar integer;
+
+	declare @BaseSalaryVar integer;
+	declare @IncreaseVar integer;
+	declare @GrossPrizesVar integer;
+	declare @DeductionsVar integer;
+
+	declare @TaxPercentage integer;
+	declare @CasPercentage integer;
+	declare @CassPercentage integer;
+ 
+BEGIN
+	SET @TaxPercentage = (select tax from dbo.Taxes);
+	SET @CasPercentage = (select cas from dbo.Taxes);
+	SET @CassPercentage = (select cass from dbo.Taxes);
+
+	SET @BaseSalaryVar = (select i.Base_Salary from inserted i);
+	SET @IncreaseVar = (select i.Increase from inserted i);
+	SET @GrossPrizesVar = (select i.Gross_Prizes from inserted i);
+	SET @DeductionsVar = (select i.deductions from inserted i);
+
+	SET @GrossTotalVar = @BaseSalaryVar + @BaseSalaryVar * @IncreaseVar/100 + @GrossPrizesVar;
+	SET @CasVar = @GrossTotalVar * @CasPercentage/100;
+	SET @CassVar = @GrossTotalVar * @CassPercentage/100;
+	SET @TaxableGrossVar = @GrossTotalVar - @CasVar - @CassVar;
+	SET @TaxVar = @TaxableGrossVar * @TaxPercentage/100;
+	SET @NetSalaryVar = @GrossTotalVar - @TaxVar - @CasVar - @CassVar - @DeductionsVar;
+
+	update employees
+	set Tax=@TaxVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set CAS=@CasVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set CASS=@CassVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Gross_Total=@GrossTotalVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Taxable_Gross=@TaxableGrossVar
+	where id=(select i.id from inserted i);
+
+	update employees
+	set Net_Salary=@NetSalaryVar
+	where id=(select i.id from inserted i);
+
+END
+
+USE [SalaryApp]
+GO
+/****** Object:  Trigger [dbo].[calcNewSalary]    Script Date: 1/10/2021 6:10:45 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[calcNewSalary] ON [dbo].[Taxes]
+	FOR INSERT, UPDATE
+AS
+
+	declare @IdVar integer;
+	declare @TaxPercentage integer;
+
+BEGIN
+
+SET @TaxPercentage = (select tax from dbo.Taxes);
+
+DECLARE emp_cursor CURSOR
+    FOR Select Id from employees;
+
+OPEN emp_cursor;
+
+FETCH NEXT FROM emp_cursor INTO @IdVar;
+
+WHILE @@FETCH_STATUS = 0  
+    BEGIN
+		PRINT @IdVar;
+		UPDATE employees
+		SET Tax = Taxable_Gross * @TaxPercentage/100
+		WHERE Id = @IdVar; 
+        FETCH NEXT FROM emp_cursor INTO @IdVar;  
+    END;
+
+CLOSE emp_cursor;
+DEALLOCATE emp_cursor;
+
+END
