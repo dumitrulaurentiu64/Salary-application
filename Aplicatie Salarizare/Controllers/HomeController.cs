@@ -15,12 +15,18 @@ namespace Aplicatie_Salarizare.Controllers
  
     public class HomeController : Controller
     {
+<<<<<<< HEAD
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IEmployeesRepository _repository;
         public HomeController(IEmployeesRepository repository, IWebHostEnvironment webHostEnvironment)
         {
             _webHostEnvironment = webHostEnvironment;
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+=======
+        private readonly IEmployeesRepository _repository;
+        public HomeController(IEmployeesRepository repository)
+        {
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
             _repository = repository;
         }
 
@@ -60,6 +66,7 @@ namespace Aplicatie_Salarizare.Controllers
 
         [HttpPost, Route("insert")]
         public IActionResult Insert(Employee employee)
+<<<<<<< HEAD
         {
             _repository.AddEmployee(employee);
             return RedirectToAction("Index", "Home");
@@ -78,6 +85,16 @@ namespace Aplicatie_Salarizare.Controllers
                 }
                 return View(tax);
             }
+=======
+        {
+            _repository.AddEmployee(employee);
+            return RedirectToAction("Index", "Home");
+        }
+
+        [Route("percentages")]
+        public IActionResult Percentages()
+        {
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
             if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
             {
                 Console.WriteLine("I was here");
@@ -96,6 +113,7 @@ namespace Aplicatie_Salarizare.Controllers
             }
             return View();
         }
+<<<<<<< HEAD
         public IActionResult EmployeesReport()
         {
             var dt = new DataTable();
@@ -149,12 +167,25 @@ namespace Aplicatie_Salarizare.Controllers
             return File(result.MainStream, "application/pdf");
         }
 
+=======
+        [Route("calculate")]
+        public IActionResult Calculate()
+        {
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                Console.WriteLine("I was here");
+                return PartialView();
+            }
+            return View();
+        }
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         [Route("update")]
         public IActionResult Update()
         {
             var employees = _repository.GetEmployees();
             if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
             {
+<<<<<<< HEAD
                 return PartialView(employees);
             }
             return View(employees);
@@ -216,6 +247,40 @@ namespace Aplicatie_Salarizare.Controllers
                 return View(employees);
             }
             else if (employees.Count() != 0)
+=======
+                Console.WriteLine("I was here");
+                return PartialView(employees);
+            }
+            return View(employees);
+        }
+
+        public IActionResult UpdateEmployee(int id, string lastname, string surname, int base_salary,
+             int increase, int gross_prizes, int deductions)
+        {
+            var employees = _repository.updateEmployee(id, lastname, surname, base_salary,
+                increase, gross_prizes, deductions);
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return RedirectToAction("Update", "Home");
+            }
+            return RedirectToAction("Update", "Home");
+        }
+
+        public IActionResult Remove(int id)
+        {
+            _repository.removeEmployee(id);
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Delete(string lastname, string surname)
+        {
+            IEnumerable<Employee> employees = Enumerable.Empty<Employee>();
+
+            if (lastname != null && surname != null) { 
+                employees = _repository.GetEmployee(lastname, surname);
+            }
+            if(employees.Count() != 0)
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
             {
                 if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
                 {

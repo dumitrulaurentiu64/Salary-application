@@ -63,6 +63,7 @@
             "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
               "version": "[3.2.6, )"
+<<<<<<< HEAD
             },
             "System.CodeDom": {
               "target": "Package",
@@ -71,6 +72,8 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
             }
           },
           "imports": [
@@ -91,7 +94,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         }
       }
     }

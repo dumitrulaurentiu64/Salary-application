@@ -36,6 +36,7 @@
     <div class="employees">
         @if (Model != null)
         {
+<<<<<<< HEAD
             @if (@Model.First().Lastname == "UserNotFound")
             {
                 <script>
@@ -68,6 +69,31 @@
                     <tbody>
                 </table>
             }
+=======
+            <table id="content-table" style="margin-left: 50px;">
+                <thead>
+                    <tr>
+                        <th>Prenume</th>
+                        <th>Nume</th>
+                        <th>Functie</th>
+                        <th>Salariu de baza</th>
+                        <th>Spor</th>
+                        <th>Premii brute</th>
+                        <th>Brut total</th>
+                        <th>Brut Impozitabil</th>
+                        <th>Retineri</th>
+                        <th>Salariu Net</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var employee in Model)
+                    {
+                        @await Html.PartialAsync("_EmployeeDelete", employee)
+                    }
+                <tbody>
+            </table>
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         }
     </div>
 </div>
@@ -75,9 +101,14 @@
     $('#main-cntn').on('click', '.add-btn a', function () {
         var lastname = $("#lastname").val();
         var surname = $("#surname").val();
+<<<<<<< HEAD
         var notFirst = true;
         var url = $(this).attr('href');
         $('#main-cntn').load(url, { lastname: lastname, surname: surname, notFirst: notFirst});
+=======
+        var url = $(this).attr('href');
+        $('#main-cntn').load(url, { lastname: lastname, surname: surname });
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 
         return false;
     })

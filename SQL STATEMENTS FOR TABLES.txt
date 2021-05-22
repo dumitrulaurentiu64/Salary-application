@@ -75,6 +75,7 @@ BEGIN
 	set Net_Salary=@NetSalaryVar
 	where id=(select i.id from inserted i);
 
+<<<<<<< HEAD
 END
 
 USE [SalaryApp]
@@ -114,4 +115,6 @@ WHILE @@FETCH_STATUS = 0
 CLOSE emp_cursor;
 DEALLOCATE emp_cursor;
 
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 END

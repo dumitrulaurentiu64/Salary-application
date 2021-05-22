@@ -22,6 +22,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
     <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+<<<<<<< HEAD
     <PackageReference Include="System.CodeDom" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
@@ -46,6 +47,8 @@
     <None Update="ReportDataSet\dsEmployee.xss">
       <DependentUpon>dsEmployee.xsd</DependentUpon>
     </None>
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
   </ItemGroup>
 
 </Project>

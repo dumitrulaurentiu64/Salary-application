@@ -13,6 +13,7 @@
     <th>@Model.Deductions</th>
     <th>@Model.Net_Salary</th>
     <th>
+<<<<<<< HEAD
         <button id="empId" value="@Model.Id" onclick="removeEmp()" class="btn btn-danger btn-sm ml-2 mr-2">
             Sterge Angajat
         </button>
@@ -38,6 +39,17 @@
     }
 </script>
 
+=======
+        <form action="home/remove" method="POST">
+            <input type="hidden" name="id" value="@Model.Id"/>
+            <button type="submit" class="btn btn-danger btn-sm ml-2 mr-2">
+                Sterge Angajat
+            </button>
+        </form>
+    </th>
+</tr>
+
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 <style>
     .btn {
         margin: 5px 0 5px 0;

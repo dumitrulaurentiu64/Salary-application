@@ -384,6 +384,7 @@ S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplica
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cs
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.MvcApplicationPartsAssemblyInfo.cache
 S:\Work\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EmployeeDelete.cshtml.g.cs
+<<<<<<< HEAD
 D:\Visual Studio 2019 Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Visual Studio 2019 Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Visual Studio 2019 Work\Aplicatie Salarizare\Aplicatie Salarizare\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -1184,3 +1185,5 @@ C:\OneDrive\OneDrive - Arggo\Desktop\SA\Aplicatie Salarizare\Aplicatie Salarizar
 C:\OneDrive\OneDrive - Arggo\Desktop\SA\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.dll
 C:\OneDrive\OneDrive - Arggo\Desktop\SA\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.pdb
 C:\OneDrive\OneDrive - Arggo\Desktop\SA\Aplicatie Salarizare\Aplicatie Salarizare\obj\Debug\netcoreapp3.1\Aplicatie Salarizare.genruntimeconfig.cache
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd

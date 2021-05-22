@@ -1,7 +1,10 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Data;
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,11 +12,18 @@ namespace Aplicatie_Salarizare.Models
 {
     public class EmployeesRepository : IEmployeesRepository
     {
+<<<<<<< HEAD
         //public static string _connectionString1 = "Server=DESKTOP-6N1UVAL;Database=SalaryApp;Trusted_Connection=True";
         public static string _connectionString1 = "Server=(LocalDb)\\LocalDBPractice;Database=PracticeDB;Trusted_Connection=True";
 
         public IEnumerable<Employee> updateEmployee(int id, string lastname, string surname, int base_salary,
              int increase, int gross_prizes, int deductions)
+=======
+        public static string _connectionString1 = "Server=DESKTOP-RH29RPI\\SQLEXPRESS;Database=SalaryApp;Trusted_Connection=True;";
+
+        public IEnumerable<Employee> updateEmployee(int id, string lastname, string surname, int base_salary = -1,
+             int increase = -1, int gross_prizes = -1, int deductions = -1)
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         {
             using var conn = new SqlConnection(_connectionString1);
             try
@@ -139,6 +149,7 @@ namespace Aplicatie_Salarizare.Models
                     }
                 }
             }
+<<<<<<< HEAD
             return GetEmployees();
         }
 
@@ -213,6 +224,14 @@ namespace Aplicatie_Salarizare.Models
         {
             Taxes tax = new Taxes();
             string std = "select * from Taxes";
+=======
+        return GetEmployees();
+    }
+        public Taxes getTaxes()
+        {
+            Taxes tax = new Taxes();
+            string std = "select * from taxes";
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 
             using var conn = new SqlConnection(_connectionString1);
             using SqlCommand cmd = new SqlCommand(std, conn);
@@ -226,12 +245,20 @@ namespace Aplicatie_Salarizare.Models
             }
 
             SqlDataReader reader = cmd.ExecuteReader();
+<<<<<<< HEAD
             while (reader.Read()) {
                 tax.Tax = Convert.ToInt32(reader[0]);
                 tax.CAS = Convert.ToInt32(reader[1]);
                 tax.CASS = Convert.ToInt32(reader[2]);
                 tax.password = reader[3].ToString();
             }
+=======
+
+            tax.Tax = Convert.ToInt32(reader[0]);
+            tax.CAS = Convert.ToInt32(reader[1]);
+            tax.CASS = Convert.ToInt32(reader[2]);
+            tax.password = reader[3].ToString();
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
 
             return tax;
         }
@@ -284,7 +311,11 @@ namespace Aplicatie_Salarizare.Models
             }
         }
 
+<<<<<<< HEAD
         public IEnumerable<Employee> GetEmployeeByLastnameAndSurname(string lastname, string surname)
+=======
+        public IEnumerable<Employee> GetEmployee(string lastname, string surname)
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         {
             List<Employee> employees = new List<Employee>();
 
@@ -330,6 +361,7 @@ namespace Aplicatie_Salarizare.Models
             }
             
         }
+<<<<<<< HEAD
 
         public IEnumerable<Employee> GetEmployeeByLastname(string lastname)
         {
@@ -376,6 +408,8 @@ namespace Aplicatie_Salarizare.Models
             }
 
         }
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
         public IEnumerable<Employee> GetEmployees()
         {
             List<Employee> employees = new List<Employee>();
@@ -407,9 +441,15 @@ namespace Aplicatie_Salarizare.Models
                     employee.Gross_Prizes = Convert.ToInt32(reader[6]);
                     employee.Gross_Total = Convert.ToInt32(reader[7]);
                     employee.Taxable_Gross = Convert.ToInt32(reader[8]);
+<<<<<<< HEAD
                     employee.CAS = Convert.ToInt32(reader[9]);
                     employee.CASS = Convert.ToInt32(reader[10]);
                     employee.Tax = Convert.ToInt32(reader[11]);
+=======
+                    employee.Tax = Convert.ToInt32(reader[9]);
+                    employee.CAS = Convert.ToInt32(reader[10]);
+                    employee.CASS = Convert.ToInt32(reader[11]);
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
                     employee.Deductions = Convert.ToInt32(reader[12]);
                     employee.Net_Salary = Convert.ToInt32(reader[13]);
 
@@ -418,6 +458,7 @@ namespace Aplicatie_Salarizare.Models
                 return employees;
             }
         }
+<<<<<<< HEAD
 
         public DataTable GetEmployeeList()
         {
@@ -541,5 +582,7 @@ namespace Aplicatie_Salarizare.Models
             }
             return dt;
         }
+=======
+>>>>>>> 55cf1a321bc17485d388ed8f20d88d18a37331dd
     }
 }
